@@ -33,18 +33,18 @@ button {
   left: 0;
   width: 100%;
   z-index: 10;
-  height: 3rem;
+  height: 2rem;
 }
 
 .menu {
-  max-width: 72rem;
+  max-width: 130rem;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  /* color: #fff; */
 }
 
 .logo {
@@ -69,7 +69,7 @@ button {
 }
 
 .bar {
-  width: 1.9rem;
+  width: 2.9rem;
   height: 1.5px;
   border-radius: 2px;
   background-color: #eee;
@@ -134,14 +134,14 @@ header {
 }
 
 .title {
-  font-size: 2.8rem;
+  font-size: 4.8rem;
   margin-bottom: 25px;
 }
 
 .para{
 	width: 100%; 
 	margin-bottom: 20px;
-	font-size: 1.07rem;
+	font-size: 2.0rem;
 	/* text-align: center;
 	align-items: center; */
 }
@@ -468,5 +468,37 @@ span {
 	}	
 	100%{
 		transform: translateX(27%);
+	}	
+}
+
+
+
+
+
+
+
+/* Para 4 */
+
+
+
+
+
+
+
+
+
+
+#para4{
+	animation: animate4 8s alternate infinite;
+}
+
+@keyframes animate4 {
+	0%{
+		/* transform: rotateX(180deg); */
+		transform: scale(0.5);
+	}	
+	100%{
+		/* transform: translateX(-35%); */
+		transform: scale(1);
 	}	
 }

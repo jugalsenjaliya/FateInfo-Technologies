@@ -35,3 +35,11 @@ document.onkeypress = function(e) {
 		})
 	}
 }
+
+function myFunction() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+	document.querySelectorAll('.main').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+ }
