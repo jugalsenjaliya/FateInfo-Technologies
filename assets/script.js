@@ -1,61 +1,13 @@
-window.addEventListener('load', () => {
-	const preload = document.querySelector('.preload');
-	preload.classList.add('preload-finish');
+const hamburger_menu = document.querySelector(".hamburger-menu");
+const container = document.querySelector(".container");
+
+hamburger_menu.addEventListener("click", () => {
+  container.classList.toggle("active");
 });
 
-const navSlide = () => {
-	const burger = document.querySelector('.burger');
-	const nav = document.querySelector('.nav-links');
-	const navLinks = document.querySelectorAll('.nav-links li');
 
-	burger.addEventListener('click', () => {
-		nav.classList.toggle('nav-active');
-		
-
-		navLinks.forEach((link, index) => {
-			if(link.style.animation){
-				link.style.animation = '';
-			}
-			else{
-				link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-			}
-		});
-
-		burger.classList.toggle('toggle');
-	});
-}
-
-navSlide();
-
-
-
-
-
-
-
-
-// 
-
-
-
-
-
-let controller = new ScrollMagic.Controller();
-let timeline = new TimelineMax();
-
-timeline
-  .to(".rock", 10, { y: -300 })
-  .to(".girl", 10, { y: -200 }, "-=10")
-  .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
-  .to(".content", 10, { top: "0%" }, "-=10")
-  .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
-  .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 });
-
-let scene = new ScrollMagic.Scene({
-  triggerElement: "section",
-  duration: "300%",
-  triggerHook: 0,
+const bg = document.getElementById('main');
+window.addEventListener('scroll',function(){
+	bg.style.backgroundSize = 120 - +window.pageYOffset/12+'%';
+	bg.style.opacity = 1 - +window.pageYOffset/700+'';
 })
-  .setTween(timeline)
-  .setPin("section")
-  .addTo(controller);
