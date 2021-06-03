@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+.dark-mode{
+	filter: invert(1) hue-rotate(180deg)
+}
+.invert{
+	filter: invert(1) hue-rotate(180deg)
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -119,24 +126,35 @@ header {
 }
 
 .inner {
-  max-width: 35rem;
+  /* max-width: 35rem; */
+  width: 90%;
   text-align: center;
   color: #fff;
   padding: 0 2rem;
 }
 
 .title {
-  font-size: 2.7rem;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+}
+
+.para{
+	width: 100%; 
+	margin-bottom: 20px;
+	font-size: 1.07rem;
+	/* text-align: center;
+	align-items: center; */
 }
 
 .btn {
+	font-size: 1.2rem;
   margin-top: 1rem;
   padding: 0.6rem 1.8rem;
-  background-color: #1179e7;
+  background-color: #0ab904;
   border: none;
   border-radius: 25px;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   cursor: pointer;
   text-decoration: none;
 }
@@ -297,4 +315,158 @@ ul {
 
 .container.active .main:hover {
   transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
+}
+
+
+
+
+
+
+
+/* Para 1 animation */
+
+
+
+
+
+
+
+
+#fly-in {
+	font-size: 4em;
+	margin: 10vh auto;
+	height: 15vh; 
+	text-transform: uppercase;
+  }
+  
+  #fly-in span {
+	display: block;
+	font-size: .4em;
+	opacity: .8;
+  }
+  
+  #fly-in div {
+   position: absolute; 
+	margin: 2vh 0;
+	opacity: 0;
+	left: 10vw;
+	width: 80vw;
+	animation: switch 32s linear infinite;
+  }
+  
+  #fly-in div:nth-child(2) { animation-delay: 4s}
+  #fly-in div:nth-child(3) { animation-delay: 8s}
+  #fly-in div:nth-child(4) { animation-delay: 12s}
+  #fly-in div:nth-child(5) { animation-delay: 16s}
+  #fly-in div:nth-child(6) { animation-delay: 20s}
+  #fly-in div:nth-child(7) { animation-delay: 24s}
+  #fly-in div:nth-child(8) { animation-delay: 28s}
+  
+  @keyframes switch {
+	  0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+	  3% { opacity: 1;filter: blur(0); transform:scale(1)}
+	  10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+	  13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+	  80% { opacity: 0}
+	  100% { opacity: 0}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Para 2 animation */
+
+
+
+
+#para2{
+	perspective: 200px;
+    /* -webkit-animation: perspective 5s cubic-bezier(0.35, 0.06, 0.92, 0.03) infinite; */
+	animation: perspective 3s alternate infinite;
+}
+
+
+
+
+@keyframes perspective {
+	0% {
+		perspective: 100px;
+		transform: scale(0.6);
+	}
+	100% {
+		perspective: 10000px;
+		transform: scale(1);
+	}
+}
+
+p {
+	transform-style: preserve-3d;
+}
+
+span {
+	display: inline-block;	
+}
+
+
+
+
+
+
+
+
+/* Para 3 */
+
+
+
+
+
+
+
+
+
+
+
+#para3{
+	animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+	0%{
+		transform: translateX(35%);
+	}	
+	100%{
+		transform: translateX(-35%);
+	}	
+}
+#para33{
+	animation: animate2 20s alternate infinite;
+}
+
+@keyframes animate2 {
+	0%{
+		transform: translateX(-27%);
+	}	
+	100%{
+		transform: translateX(27%);
+	}	
 }
