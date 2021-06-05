@@ -18,14 +18,14 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+/* .container {
   min-height: 100vh;
   width: 100%;
   background-color: #000000;
-  /* background-image: linear-gradient(135deg, #485461 0%, #28313b 74%); */
+  background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
   overflow-x: hidden;
   transform-style: preserve-3d;
-}
+} */
 
 .navbar {
   position: fixed;
@@ -538,19 +538,19 @@ h1 {
 
 .cardcontainer {
   width: 350px;
-  height: 440px;
+  height: 240px;
   overflow: hidden;
-  background-color: white;
-  box-shadow: 0 0 45px gray;
+  /* background-color: white; */
+  /* box-shadow: 0 0 45px gray; */
   margin-left: auto;
   margin-right: auto;
   transition: 0.3s;
-  border-radius: 5%;
+  /* border-radius: 5%; */
 }
 
-.cardcontainer:hover {
+/* .cardcontainer:hover {
   box-shadow: 0 0 45px gray
-}
+} */
 
 .photo {
   height: 300px;
@@ -591,7 +591,8 @@ h1 {
 .txt4 {
   font-size: 27px;
   position: relative;
-  top: 33px
+  top: 33px;
+  color: white;
 }
 
 .txt5 {
@@ -599,13 +600,16 @@ h1 {
   margin-top: 30px;
   margin-bottom: 30px;
   top: 18px;
-  color: rgb(29, 170, 47);
-  font-size: 23px
+  color: white;
+  font-size: 23px;
 }
 
 .txt2 {
   position: relative;
-  top: 10px
+  top: 10px;
+  color: white;
+  font-size: medium;
+  align-items: center;
 }
 
 .cardcontainer:hover>.photo {
@@ -673,4 +677,115 @@ h1 {
 .comments {
   float: right;
   cursor: pointer
+}
+
+
+
+
+
+
+
+
+/* About */
+
+
+
+
+
+
+/* .about{
+  background-image: url('img/pexels-josh-sorenson-1714208(1).jpg');
+} */
+
+.container4 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card2 {
+  transform-style: preserve-3d;
+  height: 500px;
+  width: 400px;
+  border-radius: 30px;
+  padding: 0rem 1rem;
+  background-color: white;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  /* background-image: url('pexels-josh-sorenson-1714208(1).jpg'); */
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  /* opacity: 0.5; */
+}
+
+/* .card::before{
+  opacity: 0.5;
+} */
+
+.sneaker2 {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker2 img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle2 {
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info2 h1 {
+  font-size: 2rem;
+  transition: all 0.75s ease-out;
+}
+.info2 h3 {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.sizes2 {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+}
+.sizes2 button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+button.active {
+  background: #585858;
+  color: white;
+}
+.purchase2 {
+  margin-top: 0.2rem;
+  transition: all 0.75s ease-out;
+}
+.purchase2 button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
 }
