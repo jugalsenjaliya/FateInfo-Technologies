@@ -545,6 +545,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   transition: 0.3s;
+  border-radius: 5%;
 }
 
 .cardcontainer:hover {

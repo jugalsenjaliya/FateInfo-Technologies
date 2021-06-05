@@ -1,9 +1,21 @@
 const hamburger_menu = document.querySelector(".hamburger-menu");
 const container = document.querySelector(".container");
+// const homecontent = document.querySelector(".homecontent");
 
 hamburger_menu.addEventListener("click", () => {
   container.classList.toggle("active");
+//   homecontent.style.display="none";
 });
+
+function myFunction2() {
+	var x = document.getElementById("homecontent");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
 
 
 const bg = document.getElementById('main');
