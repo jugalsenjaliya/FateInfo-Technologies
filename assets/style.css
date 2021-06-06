@@ -37,7 +37,7 @@ button {
 }
 
 .menu {
-  max-width: 130rem;
+  /* max-width: 130rem; */
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -48,6 +48,7 @@ button {
 }
 
 .logo {
+  margin-left: 50px;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -208,8 +209,9 @@ ul {
   text-decoration: none;
   color: #eee;
   padding: 0.7rem 0;
+  margin-right: 100px;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -691,11 +693,16 @@ h1 {
 
 
 
+.about{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(to right,rgba(46, 46, 46, 0.75),rgba(94, 93, 93, 0.75));
+  border-radius: 3%;
+}
 
-
-/* .about{
-  background-image: url('img/pexels-josh-sorenson-1714208(1).jpg');
-} */
+.about1{
+  padding-bottom: 30px;
+}
 
 .container4 {
   width: 50%;
@@ -705,11 +712,11 @@ h1 {
 }
 .card2 {
   transform-style: preserve-3d;
-  height: 500px;
+  height: 400px;
   width: 400px;
   border-radius: 30px;
   padding: 0rem 1rem;
-  background-color: white;
+  background-color: rgb(240, 240, 240);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   /* background-image: url('pexels-josh-sorenson-1714208(1).jpg'); */
   background-size: 1000px;
@@ -722,23 +729,24 @@ h1 {
 } */
 
 .sneaker2 {
-  min-height: 35vh;
+  /* min-height: 35vh; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .sneaker2 img {
-  width: 20rem;
+  width: 14rem;
+  border-radius: 50%;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
 .circle2 {
-  width: 10rem;
-  height: 10rem;
+  width: 17rem;
+  height: 17rem;
   background: linear-gradient(
     to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
+    rgba(245, 70, 66),
+    rgba(8, 83, 156)
   );
   position: absolute;
   border-radius: 50%;
@@ -746,14 +754,15 @@ h1 {
 }
 
 .info2 h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  margin-top: 30px;
   transition: all 0.75s ease-out;
 }
 .info2 h3 {
-  font-size: 1rem;
+  font-size: 1.7rem;
   padding: 1rem 0rem;
   color: #585858;
-  font-weight: lighter;
+  font-weight: 300;
   transition: all 0.75s ease-out;
 }
 .sizes2 {
@@ -789,3 +798,60 @@ button.active {
   border-radius: 30px;
   font-weight: bolder;
 }
+
+
+
+
+
+
+
+/* Services */
+
+
+
+
+
+.services{
+  color: white;
+  background-color: black;
+  padding: 40px 40px 40px 40px;
+  border-radius: 3%;
+}
+
+.service{
+  display: flex;
+  /* margin-left: 200px;
+  margin-right: 100px; */
+  /* margin: auto; */
+  align-items: center;
+  justify-content: center;
+}
+
+.service1{
+  margin: 20px 20px 20px 20px;
+  width: 30%;
+  padding: 30px;
+  box-shadow: 1px 5px 15px rgba(255, 255, 255, 0.4);
+  height: 200px;
+  color: white;
+  background: linear-gradient(to right,rgba(46, 46, 46, 0.75),rgba(94, 93, 93, 0.75));
+  transition: transform .2s;
+}
+
+.service1:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.4);
+}
+
+.service1 h3{
+  /* text-align: center; */
+  color: rgb(29, 170, 47);
+}
+
+.service1 p{
+  width: 95%;
+}
+
+
+
+

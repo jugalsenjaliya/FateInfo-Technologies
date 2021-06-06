@@ -80,40 +80,55 @@ function myFunction() {
 
 
 
-//Movement Animation to happen
-const card = document.querySelector(".card2");
-const container2 = document.querySelector(".container4");
-//Items
-const title = document.querySelector(".title2");
-const sneaker = document.querySelector(".sneaker2 img");
-const purchase = document.querySelector(".purchase2");
-const description = document.querySelector(".info2 h3");
-const sizes = document.querySelector(".sizes2");
+// //Movement Animation to happen
+// const card = document.querySelector(".card2");
+// const container2 = document.querySelector(".container4");
+// //Items
+// const title = document.querySelector(".title2");
+// const sneaker = document.querySelector(".sneaker2 img");
+// const purchase = document.querySelector(".purchase2");
+// const description = document.querySelector(".info2 h3");
+// const sizes = document.querySelector(".sizes2");
 
-//Moving Animation Event
-container2.addEventListener("mousemove", (e) => {
-  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-});
-//Animate In
-container2.addEventListener("mouseenter", (e) => {
-  card.style.transition = "none";
-  //Popout
-  title.style.transform = "translateZ(150px)";
-  sneaker.style.transform = "translateZ(200px) rotateZ(-45deg)";
-  description.style.transform = "translateZ(125px)";
-  sizes.style.transform = "translateZ(100px)";
-  purchase.style.transform = "translateZ(75px)";
-});
-//Animate Out
-container2.addEventListener("mouseleave", (e) => {
-  card.style.transition = "all 0.5s ease";
-  card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-  //Popback
-  title.style.transform = "translateZ(0px)";
-  sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
-  description.style.transform = "translateZ(0px)";
-  sizes.style.transform = "translateZ(0px)";
-  purchase.style.transform = "translateZ(0px)";
-});
+// //Moving Animation Event
+// container2.addEventListener("mousemove", (e) => {
+//   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+//   let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+//   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+// });
+// //Animate In
+// container2.addEventListener("mouseenter", (e) => {
+//   card.style.transition = "none";
+//   //Popout
+//   title.style.transform = "translateZ(150px)";
+//   sneaker.style.transform = "translateZ(200px) rotateZ(-45deg)";
+//   description.style.transform = "translateZ(125px)";
+//   sizes.style.transform = "translateZ(100px)";
+//   purchase.style.transform = "translateZ(75px)";
+// });
+// //Animate Out
+// container2.addEventListener("mouseleave", (e) => {
+//   card.style.transition = "all 0.5s ease";
+//   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+//   //Popback
+//   title.style.transform = "translateZ(0px)";
+//   sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
+//   description.style.transform = "translateZ(0px)";
+//   sizes.style.transform = "translateZ(0px)";
+//   purchase.style.transform = "translateZ(0px)";
+// });
+
+
+
+$(document).ready(function(){
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+		if (scroll > 300) {
+		  $(".menu").css("background" , "rgba(0, 0, 0, 0.5)");
+		}
+  
+		else{
+			$(".menu").css("background" , "");  	
+		}
+	})
+  })
