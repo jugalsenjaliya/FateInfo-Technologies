@@ -15,7 +15,7 @@
 
 body,
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* .container {
@@ -135,14 +135,14 @@ header {
 }
 
 .title {
-  font-size: 4.8rem;
+  font-size: 3rem;
   margin-bottom: 25px;
 }
 
 .para{
 	width: 100%; 
 	margin-bottom: 20px;
-	font-size: 2.0rem;
+	font-size: 1.3rem;
 	/* text-align: center;
 	align-items: center; */
 }
@@ -151,7 +151,7 @@ header {
 	font-size: 1.2rem;
   margin-top: 1rem;
   padding: 0.6rem 1.8rem;
-  background-color: #0ab904;
+  background-color: rgb(176, 101, 74);
   border: none;
   border-radius: 25px;
   color: #fff;
@@ -540,7 +540,7 @@ h1 {
 
 .cardcontainer {
   width: 350px;
-  height: 240px;
+  height: 300px;
   overflow: hidden;
   /* background-color: white; */
   /* box-shadow: 0 0 45px gray; */
@@ -609,7 +609,7 @@ h1 {
 .txt2 {
   position: relative;
   top: 10px;
-  color: white;
+  color: black;
   font-size: medium;
   align-items: center;
 }
@@ -691,17 +691,53 @@ h1 {
 /* About */
 
 
-
+.container22{
+  display: flex;
+}
 
 .about{
   padding-top: 40px;
   padding-bottom: 40px;
-  background: linear-gradient(to right,rgba(46, 46, 46, 0.75),rgba(94, 93, 93, 0.75));
-  border-radius: 3%;
+  /* background: linear-gradient(to right,rgba(46, 46, 46, 0.75),rgba(94, 93, 93, 0.75)); */
+  /* border-radius: 3%; */
+  background-color: white;
 }
 
 .about1{
-  padding-bottom: 30px;
+  background-image: url('../img/pexels-fauxels-3182759.jpg');
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 30px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.about12 h1{
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 3px 3px 7px rgb(176, 101, 74);
+}
+
+.about12{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 40%;
+  padding: 50px;
+  height: 100vh;
+  border-radius: 30px;
+  margin-right: 150px;
+  padding-top: 250px;
+  float: right;
+}
+
+
+.about11{
+  display: flex;
+  padding-bottom: 50px;
 }
 
 .container4 {
@@ -711,16 +747,16 @@ h1 {
   align-items: center;
 }
 .card2 {
-  transform-style: preserve-3d;
-  height: 400px;
+  /* transform-style: preserve-3d; */
+  height: 450px;
   width: 400px;
   border-radius: 30px;
   padding: 0rem 1rem;
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240); */
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   /* background-image: url('pexels-josh-sorenson-1714208(1).jpg'); */
-  background-size: 1000px;
-  background-repeat: no-repeat;
+  /* background-size: 1000px;
+  background-repeat: no-repeat; */
   /* opacity: 0.5; */
 }
 
@@ -733,16 +769,19 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 10px;
 }
 .sneaker2 img {
-  width: 14rem;
+  width: 10rem;
   border-radius: 50%;
   z-index: 2;
-  transition: all 0.75s ease-out;
+  /* transition: all 0.75s ease-out; */
+  box-shadow: 0px 5px 10px rgb(176, 101, 74);
+
 }
-.circle2 {
-  width: 17rem;
-  height: 17rem;
+/* .circle2 {
+  width: 13rem;
+  height: 13rem;
   background: linear-gradient(
     to right,
     rgba(245, 70, 66),
@@ -751,24 +790,25 @@ h1 {
   position: absolute;
   border-radius: 50%;
   z-index: 1;
-}
+} */
 
 .info2 h1 {
-  font-size: 3.5rem;
+  /* font-size: 2.5rem; */
   margin-top: 30px;
-  transition: all 0.75s ease-out;
+  color: rgb(176, 101, 74);
+  /* transition: all 0.75s ease-out; */
 }
 .info2 h3 {
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   padding: 1rem 0rem;
   color: #585858;
-  font-weight: 300;
-  transition: all 0.75s ease-out;
+  font-weight: 450;
+  /* transition: all 0.75s ease-out; */
 }
 .sizes2 {
   display: flex;
   justify-content: space-between;
-  transition: all 0.75s ease-out;
+  /* transition: all 0.75s ease-out; */
 }
 .sizes2 button {
   padding: 0.5rem 2rem;
@@ -786,7 +826,7 @@ button.active {
 }
 .purchase2 {
   margin-top: 0.2rem;
-  transition: all 0.75s ease-out;
+  /* transition: all 0.75s ease-out; */
 }
 .purchase2 button {
   width: 100%;
@@ -811,11 +851,30 @@ button.active {
 
 
 
+.services h1{
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 7px rgb(176, 101, 74);
+}
+
+.services1{
+  font-size: 9rem;
+  opacity: 0.04;
+  position: absolute;
+  font-weight: 900;
+  margin-left: 330px;
+  top: 2280px;
+}
+
+.services11{
+  color: rgb(176, 101, 74);
+}
+
 .services{
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   padding: 40px 40px 40px 40px;
-  border-radius: 3%;
+  /* border-radius: 3%; */
 }
 
 .service{
@@ -831,21 +890,22 @@ button.active {
   margin: 20px 20px 20px 20px;
   width: 30%;
   padding: 30px;
-  box-shadow: 1px 5px 15px rgba(255, 255, 255, 0.4);
-  height: 200px;
-  color: white;
-  background: linear-gradient(to right,rgba(46, 46, 46, 0.75),rgba(94, 93, 93, 0.75));
+  border-radius: 30px;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
+  height: 210px;
+  color: black;
+  /* background: linear-gradient(to right,rgba(46, 46, 46, 0.75),rgba(94, 93, 93, 0.75)); */
   transition: transform .2s;
 }
 
 .service1:hover{
   transform: scale(1.1);
-  box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 .service1 h3{
   /* text-align: center; */
-  color: rgb(29, 170, 47);
+  color: rgb(176, 101, 74);
 }
 
 .service1 p{
@@ -855,3 +915,30 @@ button.active {
 
 
 
+
+
+
+
+
+/* Media Queries */
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+  .container22{
+    display: block;
+  }
+
+  .about11{
+    display: block;
+  }
+
+  .card2{
+    margin: auto;
+  }
+}

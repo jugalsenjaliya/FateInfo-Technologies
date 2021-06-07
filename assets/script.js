@@ -1,27 +1,33 @@
-const hamburger_menu = document.querySelector(".hamburger-menu");
-const container = document.querySelector(".container");
-// const homecontent = document.querySelector(".homecontent");
+// const hamburger_menu = document.querySelector(".hamburger-menu");
+// const container = document.querySelector(".container");
 
-hamburger_menu.addEventListener("click", () => {
-  container.classList.toggle("active");
-//   homecontent.style.display="none";
-});
+// hamburger_menu.addEventListener("click", () => {
+//   container.classList.toggle("active");
+// });
 
-function myFunction2() {
-	var x = document.getElementById("homecontent");
-	if (x.style.display === "none") {
-	  x.style.display = "block";
-	} else {
-	  x.style.display = "none";
-	}
-  }
+AOS.init();
 
 
+// navbar toggle
 
-const bg = document.getElementById('main');
+// function myFunction2() {
+// 	var x = document.getElementById("homecontent");
+// 	if (x.style.display === "none") {
+// 	  x.style.display = "block";
+// 	} else {
+// 	  x.style.display = "none";
+// 	}
+//   }
+
+
+
+
+// first slider animation
+
+const bg = document.getElementById('about1');
 window.addEventListener('scroll',function(){
-	bg.style.backgroundSize = 120 - +window.pageYOffset/12+'%';
-	bg.style.opacity = 1 - +window.pageYOffset/700+'';
+	bg.style.backgroundSize = 120 - +window.pageYOffset/55+'%';
+	bg.style.opacity = 1 - +window.pageYOffset/8000+'';
 })
 
 
@@ -36,22 +42,34 @@ window.addEventListener('scroll',function(){
 
 
 
-document.onkeypress = function(e) {
-	e = e || window.event;
+// document.onkeypress = function(e) {
+// 	e = e || window.event;
 
-	if(e.keyCode == 13){
-		document.documentElement.classList.toggle('dark-mode');
+// 	if(e.keyCode == 13){
+// 		document.documentElement.classList.toggle('dark-mode');
 
-		document.querySelectorAll('.main').forEach((result) =>{
-			result.classList.toggle('invert');
-		})
-	}
-}
+// 		document.querySelectorAll('.main').forEach((result) =>{
+// 			result.classList.toggle('invert');
+// 		})
+// 	}
+// }
+
+
+
+// Dark mode toggle
+
+
 
 function myFunction() {
 	var element = document.body;
 	element.classList.toggle("dark-mode");
 	document.querySelectorAll('.main').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+	document.querySelectorAll('.about1').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+	document.querySelectorAll('.about12').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
  }
@@ -92,17 +110,17 @@ function myFunction() {
 
 // //Moving Animation Event
 // container2.addEventListener("mousemove", (e) => {
-//   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-//   let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+//   let xAxis = (window.innerWidth / 2 - e.pageX) / 40;
+//   let yAxis = (window.innerHeight / 2 - e.pageY) / 40;
 //   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 // });
 // //Animate In
 // container2.addEventListener("mouseenter", (e) => {
 //   card.style.transition = "none";
 //   //Popout
-//   title.style.transform = "translateZ(150px)";
-//   sneaker.style.transform = "translateZ(200px) rotateZ(-45deg)";
-//   description.style.transform = "translateZ(125px)";
+//   title.style.transform = "translateZ(50px)";
+//   sneaker.style.transform = "translateZ(100px) rotateZ(-45deg)";
+//   description.style.transform = "translateZ(25px)";
 //   sizes.style.transform = "translateZ(100px)";
 //   purchase.style.transform = "translateZ(75px)";
 // });
