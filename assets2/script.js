@@ -72,7 +72,10 @@ function myFunction() {
 	document.querySelectorAll('.about12').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
-	document.querySelectorAll('.slide-image').forEach((result) =>{
+	document.querySelectorAll('.hero-slider').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+	document.querySelectorAll('.infohead').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
  }
