@@ -72,6 +72,9 @@ function myFunction() {
 	document.querySelectorAll('.about12').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
+	document.querySelectorAll('.slide-image').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
  }
 
 
@@ -136,6 +139,11 @@ function myFunction() {
 //   purchase.style.transform = "translateZ(0px)";
 // });
 
+
+
+
+
+// onscroll navbar
 
 
 $(document).ready(function(){
