@@ -149,12 +149,16 @@ function myFunction() {
 $(document).ready(function(){
 	$(window).scroll(function(){
 		var scroll = $(window).scrollTop();
-		if (scroll > 300) {
+		if (scroll > 70) {
 		  $(".menu").css("background" , "rgba(0, 0, 0, 0.5)");
+		  $(".menu").css("display" , "flex");
+		  $(".moonicon").css("margin-left" , "900px");
 		}
   
 		else{
 			$(".menu").css("background" , "");  	
+			$(".menu").css("display" , "none");
+			// $(".moonicon").css("margin-left" , "1200px");
 		}
 	})
   })

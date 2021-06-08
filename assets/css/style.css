@@ -125,8 +125,8 @@ body {
   font-weight: 700;
   line-height: 1.3;
   color: transparent;
-  -webkit-text-stroke: 1px #fff;
-  color: white;
+  -webkit-text-stroke: 0.7px #fff;
+  color: rgb(176, 101, 74);
 }
 
 /* line 122, D:/WEB/Projects/Slider/assets/scss/style.scss */
