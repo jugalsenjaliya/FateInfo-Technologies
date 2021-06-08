@@ -1,5 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+}
+
+.cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 18px solid gray;
+  border-radius: 50%;
+  opacity: 0.5;
+  top: -8px;
+  left: -8px;
+  /* animation: cursorAnim2 0.5s infinite alternate; */
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 2px solid red;
+}
+
+
 .dark-mode{
 	filter: invert(1) hue-rotate(180deg)
 }
@@ -15,7 +74,7 @@
 
 body,
 button {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', serif;
 }
 
 /* .container {
@@ -539,14 +598,14 @@ h1 {
 }
 
 .cardcontainer {
-  width: 350px;
+  width: 400px;
   height: 300px;
   overflow: hidden;
   /* background-color: white; */
   /* box-shadow: 0 0 45px gray; */
   margin-left: auto;
   margin-right: auto;
-  transition: 0.3s;
+  /* transition: 0.3s; */
   /* border-radius: 5%; */
 }
 
@@ -599,7 +658,7 @@ h1 {
 
 .txt5 {
   position: relative;
-  margin-top: 30px;
+  margin-top: 31px;
   margin-bottom: 30px;
   top: 18px;
   color: white;
@@ -612,6 +671,7 @@ h1 {
   color: black;
   font-size: medium;
   align-items: center;
+  text-align: center;
 }
 
 .cardcontainer:hover>.photo {
@@ -706,7 +766,7 @@ h1 {
 .about1{
   background-image: url('../img/pexels-fauxels-3182759.jpg');
   height: 100vh;
-  background-size: 100%;
+  /* background-size: 100%; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-bottom: 30px;
@@ -720,7 +780,7 @@ h1 {
 .about12 h1{
   font-size: 4rem;
   font-weight: 900;
-  text-shadow: 3px 3px 7px rgb(176, 101, 74);
+  /* text-shadow: 3px 3px 7px white; */
 }
 
 .about12{
@@ -728,7 +788,7 @@ h1 {
   width: 40%;
   padding: 50px;
   height: 100vh;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   margin-right: 150px;
   padding-top: 250px;
   float: right;
@@ -776,7 +836,7 @@ h1 {
   border-radius: 50%;
   z-index: 2;
   /* transition: all 0.75s ease-out; */
-  box-shadow: 0px 5px 10px rgb(176, 101, 74);
+  box-shadow: 0px 5px 10px black;
 
 }
 /* .circle2 {
@@ -795,7 +855,7 @@ h1 {
 .info2 h1 {
   /* font-size: 2.5rem; */
   margin-top: 30px;
-  color: rgb(176, 101, 74);
+  color: black;
   /* transition: all 0.75s ease-out; */
 }
 .info2 h3 {
@@ -854,7 +914,7 @@ button.active {
 .services h1{
   font-size: 4rem;
   font-weight: 800;
-  text-shadow: 3px 3px 7px rgb(176, 101, 74);
+  /* text-shadow: 3px 3px 7px rgb(176, 101, 74); */
 }
 
 .services1{
@@ -905,11 +965,19 @@ button.active {
 
 .service1 h3{
   /* text-align: center; */
-  color: rgb(176, 101, 74);
+  color: black;
 }
 
 .service1 p{
   width: 95%;
+}
+
+
+.card{
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 200px;
+  padding-top: 20px;
 }
 
 
@@ -934,11 +1002,93 @@ button.active {
     display: block;
   }
 
+  .container2{
+    margin-bottom: 0px;
+  }
+
   .about11{
     display: block;
   }
 
   .card2{
     margin: auto;
+  }
+
+  .line{
+    display: none;
+  }
+
+  .slider-title{
+    display: none;
+  }
+
+  .slidepp{
+    margin-bottom: 150px;
+    color: white;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(176, 101, 74);
+    font-weight: 300;
+  }
+  
+  .slidepp span{
+    margin-top: 20px;
+    width: 90%;
+    color: white;
+    color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white;
+    /* font-weight: 200; */
+  }
+
+  .navbar{
+    width: 100%;
+  }
+
+  .about{
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .about1{
+    background: none;
+    margin-left: 150px;
+    width: 100%;
+    height: 0px;
+  }
+
+  .about12{
+    width: 100%;
+  }
+
+  .about11{
+    display: block;
+    margin-left: 200px;
+    margin-bottom: 0px;
+  }
+
+  .card2{
+    margin-top: 30px;
+  }
+
+  .container4{
+    margin-top: 0px;
+  }
+
+  .services1{
+    font-size: 6rem;
+    font-weight: 800;
+    margin-left: 30px;
+    top: 3880px;
+  }
+
+  .service{
+    display: block;
+  }
+
+  .service1{
+    width: 75%;
+    margin-left: 70px;
+  }
+
+  .service11 h1{
+    margin-left: 500px;
   }
 }

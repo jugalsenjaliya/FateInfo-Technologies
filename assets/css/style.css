@@ -58,8 +58,8 @@ body {
 .slidepp{
   margin-bottom: 200px;
   color: white;
-  -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: rgb(176, 101, 74);
+  /* -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: rgb(176, 101, 74); */
   font-weight: 400;
 }
 
@@ -79,7 +79,7 @@ body {
 /* line 69, D:/WEB/Projects/Slider/assets/scss/style.scss */
 #hero-slider {
   /* margin-top: 0px; */
-  position: relative;
+  /* position: relative; */
   height: 100vh;
   display: flex;
   background: #030303;
@@ -137,7 +137,8 @@ body {
   position: relative;
   flex: 1 1 20%;
   padding: 2rem;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background: none; */
 }
 
 /* line 128, D:/WEB/Projects/Slider/assets/scss/style.scss */
@@ -149,6 +150,10 @@ body {
   transform: rotate(90deg);
   color: transparent;
   -webkit-text-stroke: 1px #030303;
+}
+
+.slider-title span{
+  color: white;font-size: 70px;margin-left: 60px;-webkit-text-stroke-width: 3px;-webkit-text-stroke-color: rgb(176, 101, 74);margin-top: 20px;
 }
 
 /* line 137, D:/WEB/Projects/Slider/assets/scss/style.scss */
@@ -507,3 +512,23 @@ body {
 /* #RESPONSIVE - END*/
 
 /*# sourceMappingURL=../css/style.map */
+
+
+@media only screen and (max-width: 900px) {
+
+  .slidepp{
+    margin-bottom: 170px;
+    color: white;
+    /* -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(176, 101, 74); */
+    font-weight: 500;
+  }
+  
+  .slidepp span{
+    margin-top: 20px;
+    width: 90%;
+    color: white;
+    color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white;
+    /* font-weight: 200; */
+  }
+}
