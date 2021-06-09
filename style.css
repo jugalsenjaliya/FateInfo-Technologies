@@ -40,11 +40,11 @@ body {
 
 
 
-.Hvcontainer:after{
-  /* clear   : both; */
-  /* display : table; */
-  /* content : ''; */
-}
+/* .Hvcontainer:after{
+  clear   : both;
+  display : table;
+  content : '';
+} */
 
 .bg-items {
     cursor: pointer;
