@@ -1020,15 +1020,13 @@ button.active {
     display: none;
   }
 
-  .slider-title{
-    display: none;
-  }
+  
 
   .slidepp{
     margin-bottom: 150px;
     color: white;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: rgb(176, 101, 74);
+    /* -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(176, 101, 74); */
     font-weight: 300;
   }
   

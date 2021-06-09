@@ -153,7 +153,11 @@ body {
 }
 
 .slider-title span{
-  color: white;font-size: 70px;margin-left: 60px;-webkit-text-stroke-width: 3px;-webkit-text-stroke-color: rgb(176, 101, 74);margin-top: 20px;
+  color: white;
+  font-size: 70px;
+  margin-left: 60px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(176, 101, 74);margin-top: 20px;
 }
 
 /* line 137, D:/WEB/Projects/Slider/assets/scss/style.scss */
@@ -531,4 +535,13 @@ body {
     color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white;
     /* font-weight: 200; */
   }
+
+  .slider-title span{
+    font-size: 35px;
+    margin-left: 200px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(176, 101, 74);
+    margin-top: 0px;
+  }
+  
 }
