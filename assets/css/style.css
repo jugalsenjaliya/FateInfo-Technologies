@@ -539,8 +539,8 @@ body {
   .slider-title span{
     font-size: 35px;
     margin-left: 200px;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(176, 101, 74);
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(176, 101, 74); */
     margin-top: 0px;
   }
   

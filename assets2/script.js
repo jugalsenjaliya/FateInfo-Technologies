@@ -63,6 +63,14 @@ AOS.init();
 function myFunction() {
 	var element = document.body;
 	element.classList.toggle("dark-mode");
+
+	if($('#picture').attr('src') == 'img/4883637.png')
+		$('#picture').attr('src', 'img/night-mode-2-475098.png');
+	else
+		$('#picture').attr('src', 'img/4883637.png');
+
+	// $('#picture').attr('src', 'img/4883637.png');
+
 	document.querySelectorAll('.main').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
@@ -88,6 +96,12 @@ function myFunction() {
 		result.classList.toggle('invert');
 	})
 	document.querySelectorAll('.tech1').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+	document.querySelectorAll('.testimg').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+	document.querySelectorAll('.items').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
  }
