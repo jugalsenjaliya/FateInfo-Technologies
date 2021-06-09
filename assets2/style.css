@@ -95,15 +95,17 @@ button {
   height: 2rem;
 }
 
-.menu {
-  /* max-width: 130rem; */
+/* .menu {
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* color: #fff; */
+} */
+
+.menu{
+  margin-top: 0px;margin-bottom: 0px;position: fixed;z-index: 999999;background-color: rgba(0, 0, 0, 0.6);width: 100%;display: none;height: 70px;
 }
 
 .logo {
