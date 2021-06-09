@@ -600,6 +600,7 @@ h1 {
 .cardcontainer {
   width: 400px;
   height: 300px;
+  padding-top: 20px;
   overflow: hidden;
   /* background-color: white; */
   /* box-shadow: 0 0 45px gray; */
@@ -766,6 +767,7 @@ h1 {
 .about1{
   background-image: url('../img/pexels-fauxels-3182759.jpg');
   height: 100vh;
+  background-size: 100%;
   /* background-size: 100%; */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -923,7 +925,7 @@ button.active {
   position: absolute;
   font-weight: 900;
   margin-left: 330px;
-  top: 2280px;
+  top: 2300px;
 }
 
 .services11{
@@ -1038,8 +1040,17 @@ button.active {
     /* font-weight: 200; */
   }
 
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .homecontent{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
   .navbar{
-    width: 100%;
+    width: 90%;
   }
 
   .about{
@@ -1075,8 +1086,8 @@ button.active {
   .services1{
     font-size: 6rem;
     font-weight: 800;
-    margin-left: 30px;
-    top: 3880px;
+    margin-left: 0px;
+    top: 3890px;
   }
 
   .service{

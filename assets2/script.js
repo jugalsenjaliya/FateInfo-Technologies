@@ -24,11 +24,11 @@ AOS.init();
 
 // first slider animation
 
-const bg = document.getElementById('about1');
-window.addEventListener('scroll',function(){
-	bg.style.backgroundSize = 120 - +window.pageYOffset/55+'%';
-	bg.style.opacity = 1 - +window.pageYOffset/8000+'';
-})
+// const bg = document.getElementById('about1');
+// window.addEventListener('scroll',function(){
+// 	bg.style.backgroundSize = 120 - +window.pageYOffset/55+'%';
+// 	bg.style.opacity = 1 - +window.pageYOffset/8000+'';
+// })
 
 
 // const bg2 = document.getElementById('main2');
@@ -73,6 +73,9 @@ function myFunction() {
 		result.classList.toggle('invert');
 	})
 	document.querySelectorAll('.hero-slider').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+	document.querySelectorAll('.infohead').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
 	document.querySelectorAll('.infohead').forEach((result) =>{
