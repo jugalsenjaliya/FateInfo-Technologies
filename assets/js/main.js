@@ -112,9 +112,9 @@ function heroSlider() {
         return arguments[1] < 10 ? '0' + arguments[1] : arguments[1];
     }
 
-    // const setCurrent = function () {
-    //     slider.current.innerText = leadingZero `${slider.activeIndex + 1}`;
-    // }
+    const setCurrent = function () {
+        slider.current.innerText = leadingZero `${slider.activeIndex + 1}`;
+    }
 
     const changeSlide = function (direction) {
         slider.idle = false;
