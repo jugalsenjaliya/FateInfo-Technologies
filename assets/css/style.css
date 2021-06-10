@@ -66,7 +66,7 @@ body {
 .slidepp span{
   width: 80%;
   color: white;
-  color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white;
+  /* color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white; */
   /* font-weight: 200; */
 }
 
@@ -532,7 +532,7 @@ body {
     margin-top: 20px;
     width: 90%;
     color: white;
-    color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white;
+    /* color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white; */
     /* font-weight: 200; */
   }
 
