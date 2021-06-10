@@ -149,15 +149,15 @@ body {
   transform-origin: 0% 0%;
   transform: rotate(90deg);
   color: transparent;
-  -webkit-text-stroke: 1px #030303;
+  /* -webkit-text-stroke: 1px #030303; */
 }
 
 .slider-title span{
   color: white;
   font-size: 70px;
   margin-left: 60px;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgb(176, 101, 74);margin-top: 20px;
+  /* -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(176, 101, 74);margin-top: 20px; */
 }
 
 /* line 137, D:/WEB/Projects/Slider/assets/scss/style.scss */

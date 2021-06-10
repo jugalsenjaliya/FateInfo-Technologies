@@ -83,9 +83,9 @@ function myFunction() {
 	document.querySelectorAll('.hero-slider').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
-	document.querySelectorAll('.infohead').forEach((result) =>{
-		result.classList.toggle('invert');
-	})
+	// document.querySelectorAll('.infohead').forEach((result) =>{
+	// 	result.classList.toggle('invert');
+	// })
 	document.querySelectorAll('.infohead').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
