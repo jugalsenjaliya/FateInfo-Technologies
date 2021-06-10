@@ -236,30 +236,41 @@ document.addEventListener('click', () => {
 
 function sendmail(){
 
-
+	var name = $('#Name').val();
+	var email = $('#Sender').val();
+	var contact = $('#Contact').val();
 	var file = event.srcElement.files[0];
-   var reader = new FileReader();
-   reader.readAsBinaryString(file);
-   reader.onload = function () {
+	var reader = new FileReader();
+	reader.readAsBinaryString(file);
+	reader.onload = function () {
        var dataUri = "data:" + file.type + ";base64," + btoa(reader.result);
        Email.send({
-           SecureToken : "********",
-           To : 'info@destination.com',
-           From : "you@source.com",
-           Subject : "Send with base64 attachment",
-           Body : "Sending file:" + file.name,
-           Attachments : [
-          	{
+		  	SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+			To: 'senjaliyajugal@gmail.com',
+			From: "senjaliyajugal@gmail.com",
+            Subject : "New message on contact from "+name,
+            Body : 'Name: '+name+'<br>Email: '+email+'<br>Contact: '+contact+'<br>Sending file:' + file.name,
+            Attachments : [
+           	{
           		name : file.name,
           		data : dataUri
           	}]
-       }).then(
-         message => alert(message)
+        }).then(
+			message => {
+				if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					window.location.href = "index.html";
+				}
+				else{
+					console.error (message);
+					alert('There is error at sending message. ')
+				}
+			}
        );
-   };
-   reader.onerror = function() {
+	};
+    reader.onerror = function() {
        console.log('there are some problems');
-   };
+    };
 
 
 
@@ -278,9 +289,9 @@ function sendmail(){
 	// 	// Host : "smtp.gmail.com",
 	// 	// Username : "",
 	// 	// Password : "",
-	// 	SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-	// 	To: 'senjaliyajugal@gmail.com',
-	// 	From: "senjaliyajugal@gmail.com",
+	// SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+	// To: 'senjaliyajugal@gmail.com',
+	// From: "senjaliyajugal@gmail.com",
 	// 	Subject: "New message on contact from "+name,
 	// 	Body: Body
 	// }).then(

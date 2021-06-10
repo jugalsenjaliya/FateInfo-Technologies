@@ -36,7 +36,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
   </head>
-  <body>
+  <body style="background-color: white;">
 
 	<div style="position: fixed;z-index: 999;top: 100px;left: 20px;"><button onclick="myFunction()" style="background: none;border: none;color: white;"><img id="picture" src="img/4883637.png" width="40px" style="border-radius: 50%;background-color: white;"></button></div>
 	<div class="cursor"></div>
@@ -50,7 +50,7 @@
 
       <div class="form-mid">
         <form action="javascript:sendmail()" method="post">
-            <h2 style="text-align: center;padding: 10px;padding-top: 20px;padding-bottom: 20px;color: rgba(53, 121, 246, 1);">Contact Us</h2>
+            <h2 style="text-align: center;padding: 10px;padding-top: 20px;padding-bottom: 20px;color: rgb(176, 101, 74);">Contact Us</h2>
             <div class="field">
                 <span class="field-text">Name</span>
                 <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="">
@@ -67,13 +67,13 @@
             </div>
             <div class="field">
 				<div class="field-text">Upload Resume</div>
-                <input type="file" id="fileupload" name="fileupload">
+                <input type="file" id="fileupload" name="fileupload" onchange="sendmail()">
             </div>
             
 
-            <center><div class="field">
+            <!-- <center><div class="field">
                 <button type="submit" class="btn btn-primary">Send Request</button>
-            </div></center>
+            </div></center> -->
         </form>
     </div>
 
@@ -112,22 +112,22 @@
 
 			<ul class="list-unstyled">
 			<li>
-				<a href="#!">Home</a>
+				<a href="index.html" style="color: rgb(176, 101, 74);">Home</a>
 			</li>
 			<li>
-				<a href="#!"> About us</a>
+				<a href="#!" style="color: rgb(176, 101, 74);"> About us</a>
 			</li>
 			<li>
-				<a href="#!">Services</a>
+				<a href="#!" style="color: rgb(176, 101, 74);">Services</a>
 			</li>
 			<li>
-				<a href="#!"> Team</a>
+				<a href="#!" style="color: rgb(176, 101, 74);"> Team</a>
 			</li>
 			<li>
-				<a href="#!"> Privacy Policy</a>
+				<a href="#!" style="color: rgb(176, 101, 74);"> Privacy Policy</a>
 			</li>
 			<li>
-				<a href="#!"> Terms of use</a>
+				<a href="#!" style="color: rgb(176, 101, 74);"> Terms of use</a>
 			</li>
 			</ul>
 
