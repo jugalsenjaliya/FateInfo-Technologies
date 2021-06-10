@@ -57,6 +57,37 @@
 	  <div class="menu">
 		  <div style="display: flex;">
 			<a href="index.html" style="position: fixed;height: 100px;top: 5px;"><img src="img/Logo Name new.png" width="200px"></a>
+
+
+			<div class="nav">
+				<ul class="nav-links">
+					<li class="nav-item">
+						<button class="button" onclick="document.location='index.html'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Home</button>
+					</li>
+		
+					<li class="nav-item">
+						<button class="button" onclick="document.location='#About'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">About</button>
+					</li>
+		
+					<li class="nav-item">
+						<button class="button" onclick="document.location='#services'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Services</button>
+					</li>
+		
+					<li class="nav-item">
+						<button class="button" onclick="document.location='#Team'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Team</button>
+					</li>
+		
+					<li class="nav-item">
+						<button class="button" onclick="document.location='contact.html'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Contact</button>
+					</li>
+				</ul>
+
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</div>
 			
 			
 			
@@ -72,12 +103,12 @@
             <div id="slides-main" class="slides">
                 <div class="slide" data-index="0">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url('img/pexels-josh-sorenson-1714208(1).jpg');opacity: 0.5;"></div>
+                        <div class="slide-image" style="background-image: url('img/wp5320845.jpg');opacity: 0.4;"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="1">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url('img/pexels-fauxels-3183197.jpg');opacity: 0.5;"></div>
+                        <div class="slide-image" style="background-image: url('img/Black-Desk-Background.jpg');opacity: 0.5;"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="2">
@@ -111,7 +142,7 @@
 				<h2 class="slide-title slide" data-index="4"><div class="slidepp"><center>The growling engine of change - Technology.<br><span style="font-size: large;">The growling engine of change - Technology.</span></center></div></h2>
             </div>
         </div>
-        <div id="info" class="infohead" style="background-color: white;color: black;background-color: white;background-size: 500px;background-repeat: no-repeat;">
+        <div id="info" class="infohead" style="color: white;background-color: black;background-size: 500px;background-repeat: no-repeat;">
             <div class="slider-title-wrapper">
 				
                 <!-- <span class="line"></span> -->
@@ -121,7 +152,7 @@
 						<!-- <video autoplay muted loop id="myVideo" style="width: 50%;position: absolute;opacity: 0.8;top: 0;transform: rotate(90deg);margin-left: 800px;z-index: 99;">
 							<source src="pexels-ron-lach-7190327.mp4" type="video/mp4">
 						</video> -->
-					<span class="slider-title1" style="font-family: 'Montserrat', serif;color: black;">FATEINFO <BR>TECHNOLOGIES</span>
+					<span class="slider-title1" style="font-family: 'Montserrat', serif;color: white;">FATEINFO <BR>TECHNOLOGIES</span>
                 </h1>
             </div>
         </div>
@@ -330,7 +361,7 @@
 
 
 
-		<div class="about">
+		<div id="About" class="about">
 			<div class="about1" id="about1">
 				<div data-aos="fade-right"data-aos-anchor-placement="bottom-center">
 					<div class="about12">
@@ -408,7 +439,7 @@
 
 	<!-- <hr> -->
 
-	<div class="services">
+	<div id="services" class="services">
   <div>
 		<center>
 			<center><div class="services1">SERVICES</div></center>
@@ -572,7 +603,7 @@
 
 
 
-	<center><div class="team">
+	<center><div id="Team" class="team">
 		<div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000"><h1>HELLO WE ARE, TEAM FATE.</h1></div>
 		<hr style="border: 2px solid black;width: 18%;">
 		<div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000"><p style="margin-bottom: 0px;font-size: 1.5rem;">Your faith on us can change your fate</p></div>
@@ -670,7 +701,33 @@
 		<div class="col-md-4 mx-auto">
 
 			<h2 class="font-weight-bold text-uppercase mt-3 mb-4">FateInfo</h2>
-			<p>To be a successful global information technology company trusted by its customers for service excellence, caring for its employees and collaborating with our customers to deliver innovative and value driven products and services.</p>
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item">
+				<a class="btn-floating btn-fb mx-1">
+					<i class="fab fa-facebook-f"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-tw mx-1">
+					<i class="fab fa-twitter"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-gplus mx-1">
+					<i class="fab fa-google-plus-g"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-li mx-1">
+					<i class="fab fa-linkedin-in"> </i>
+				</a>
+				</li>
+				<!-- <li class="list-inline-item">
+				<a class="btn-floating btn-dribbble mx-1">
+					<i class="fab fa-dribbble"> </i>
+				</a>
+				</li> -->
+			</ul>
 
 		</div>
 
@@ -678,7 +735,7 @@
 
 		<div class="col-md-2 mx-auto">
 
-			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">USEFUL LINKS</h5>
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">NAVIGATION</h5>
 
 			<ul class="list-unstyled">
 				<li>
@@ -708,7 +765,7 @@
 		<div class="col-md-3 mx-auto">
 
 
-			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACT US</h5>
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACT</h5>
 			<p style="width: 100%;">Mahaveer Residency, Avalahally(V),<br>
 				Yelahanka Bangalore,<br>
 				Karnataka - 560045<br>
@@ -721,7 +778,7 @@
 		<hr class="clearfix w-100 d-md-none">
 
 
-		<!-- <div class="col-md-2 mx-auto">
+		<div class="col-md-2 mx-auto">
 
 
 			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
@@ -741,7 +798,7 @@
 			</li>
 			</ul>
 
-		</div> -->
+		</div>
 
 
 		</div>
@@ -752,33 +809,7 @@
 
 
 
-	<ul class="list-unstyled list-inline text-center">
-		<li class="list-inline-item">
-		<a class="btn-floating btn-fb mx-1">
-			<i class="fab fa-facebook-f"> </i>
-		</a>
-		</li>
-		<li class="list-inline-item">
-		<a class="btn-floating btn-tw mx-1">
-			<i class="fab fa-twitter"> </i>
-		</a>
-		</li>
-		<li class="list-inline-item">
-		<a class="btn-floating btn-gplus mx-1">
-			<i class="fab fa-google-plus-g"> </i>
-		</a>
-		</li>
-		<li class="list-inline-item">
-		<a class="btn-floating btn-li mx-1">
-			<i class="fab fa-linkedin-in"> </i>
-		</a>
-		</li>
-		<!-- <li class="list-inline-item">
-		<a class="btn-floating btn-dribbble mx-1">
-			<i class="fab fa-dribbble"> </i>
-		</a>
-		</li> -->
-	</ul>
+	<hr>
 
 
 	<div class="footer-copyright text-center py-3">© 2021 Copyright | Jugal Senjaliya

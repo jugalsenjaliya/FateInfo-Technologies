@@ -1422,3 +1422,172 @@ button.active {
   /* margin-top: 10px; */
   margin-bottom: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+
+
+
+
+
+
+
+
+
+
+
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+  float: right;
+  /* width: 100%; */
+	/* background-color: black; */
+	/* opacity: 0.6; */
+  margin-left: 820px;
+  
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+	margin: auto;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+
+
+.logo{
+	display: flex;
+	color: white;
+	margin-right: 10px;
+}
+
+
+.burger{
+	display: none;
+	cursor: pointer;
+  position: absolute;
+  left: 200px;
+  /* margin-left: 300px; */
+}
+
+.burger div{
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background-color: white;
+	transition: all 0.5s ease;
+}
+
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+/* .navbar{
+	text-align: right;
+	background-color: #000000;
+	opacity: 0.5;
+} */
+
+.button{
+	border: none;
+	padding: 6px 12px;
+	text-align: center;
+	display: inline-block;
+	font-size: 17px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: #000000;
+	/* border-radius: 10px; */
+	color: #fff;
+	outline:none;
+}
+
+.button:hover {
+  background-color: rgb(176, 101, 74);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+	.nav-links{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	body{
+		overflow-x: hidden;
+	}
+
+	.nav-links{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+
+	.nav-links li{
+		opacity: 0;
+	}
+
+	.burger{
+		display: block;
+    margin-left: 100px;
+	}
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
