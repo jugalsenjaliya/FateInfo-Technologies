@@ -110,6 +110,15 @@ function myFunction() {
 	document.querySelectorAll('.facts1').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
+	document.querySelectorAll('.ourtechimg').forEach((result) =>{
+		if(result.style.border == '80px solid rgb(236, 236, 236)'){
+			result.style.border = '80px solid rgb(43, 42, 42)'
+		}
+
+		else{
+			result.style.border = '80px solid rgb(236, 236, 236)'
+		}
+	})
  }
 
 
@@ -314,6 +323,41 @@ function sendmail(){
 	// );
 }
 
+
+function sendmail2(){
+	var name = $('#Name').val();
+	var email = $('#Sender').val();
+	var contact = $('#Contact').val();
+	var Meaasge = $('#Meaasge').val();
+	// var myFile = $('#myFile').val();
+	// var model = $('#Model').val();
+	// var address = $('#Address').val();
+	
+	var Body='Name: '+name+'<br>Email: '+email+'<br>Contact: '+contact+'<br>Resume: '+Meaasge;
+	
+	Email.send({
+		// Host : "smtp.gmail.com",
+		// Username : "",
+		// Password : "",
+	SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+	To: 'senjaliyajugal@gmail.com',
+	From: "senjaliyajugal@gmail.com",
+		Subject: "New message on contact from "+name,
+		Body: Body
+	}).then(
+		message =>{
+			if(message=='OK'){
+				alert('Your mail has been send. Thank you for connecting.');
+				window.location.href = "index.html";
+			}
+			else{
+				console.error (message);
+				alert('There is error at sending message. ')
+			}
+		}
+	);
+
+}
 
 
 

@@ -26,7 +26,7 @@ article, header, section, aside, details, figcaption, figure, footer, header, hg
 body {
     background:#eaf5f1 none repeat scroll 0 0;
     color: #222;
-    font-family: "Raleway",sans-serif;
+    font-family: 'Avenir Next', serif;
     font-size: 100%;
     line-height: 24px;
     margin: 0;
@@ -34,7 +34,7 @@ body {
 
 }
 a{
-	font-family: "Raleway",sans-serif;
+	font-family: 'Avenir Next', serif;
 	text-decoration: none;
 	outline: none;
 }

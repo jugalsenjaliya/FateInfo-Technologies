@@ -74,7 +74,7 @@
 
 body,
 button {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Avenir Next', serif;
 }
 
 /* .container {
@@ -506,7 +506,9 @@ span {
 
 
 
-
+.ourtechimg{
+  margin-right: 60px;border: 80px solid rgb(236, 236, 236);
+}
 
 
 
@@ -867,8 +869,8 @@ h1 {
 .info2 h3 {
   font-size: 1.1rem;
   padding: 1rem 0rem;
-  color: #585858;
-  font-weight: 450;
+  color: #000;
+  /* font-weight: 450; */
   /* transition: all 0.75s ease-out; */
 }
 .sizes2 {
@@ -1539,16 +1541,18 @@ button.active {
 	font-size: 17px;
 	margin: 4px 2px;
 	cursor: pointer;
-	background-color: #000000;
+  background: none;
+	/* background-color: #000000; */
 	/* border-radius: 10px; */
 	color: #fff;
 	outline:none;
+  text-transform: uppercase;
 }
 
 .button:hover {
-  background-color: rgb(176, 101, 74);
+  /* background-color: rgb(176, 101, 74); */
   color: #fff;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 
