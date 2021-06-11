@@ -1051,6 +1051,7 @@ button.active {
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .facts1{
@@ -1095,8 +1096,8 @@ button.active {
 
 
 .tech{
-  margin-top: 50px;
-  padding: 20px;
+  padding-top: 50px;
+  /* padding: 20px; */
   background-color: white;
 }
 
@@ -1395,11 +1396,11 @@ button.active {
   padding-right: 12px;
   /* border: 1px solid rgb(0, 0, 0); */
   border-radius: 4px;
-  width: 30%;
+  width: 400px;
   box-shadow: 0px 1px 15px rgb(104, 104, 104);
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 200px;
+  /* margin-left: 500px; */
 }
 
 .form-mid form input,
@@ -1416,10 +1417,12 @@ button.active {
 
 .field{
   padding: 10px;
+  /* margin-left: 0px; */
 }
 
 .field-text{
   /* margin-top: 10px; */
+  float: left;
   margin-bottom: 10px;
 }
 
@@ -1483,7 +1486,7 @@ button.active {
 	display: none;
 	cursor: pointer;
   position: absolute;
-  left: 200px;
+  left: 350px;
   /* margin-left: 300px; */
 }
 
@@ -1568,8 +1571,8 @@ button.active {
 		position: absolute;
 		right: 0px;
 		height: 92vh;
-		top: 8vh;
-		background-color: black;
+		top: 70px;
+		background-color: rgba(0, 0, 0, 0.6);
 		display: flex;
 		flex-direction: column;
 		align-items: center;

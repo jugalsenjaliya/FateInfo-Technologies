@@ -104,6 +104,12 @@ function myFunction() {
 	document.querySelectorAll('.items').forEach((result) =>{
 		result.classList.toggle('invert');
 	})
+	document.querySelectorAll('.facts').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
+	document.querySelectorAll('.facts1').forEach((result) =>{
+		result.classList.toggle('invert');
+	})
  }
 
 

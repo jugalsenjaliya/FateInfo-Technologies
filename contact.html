@@ -36,19 +36,54 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
   </head>
-  <body style="background-color: white;">
+  <body style="background-color: white; font-family: 'Montserrat', serif;">
 
 	<div style="position: fixed;z-index: 999;top: 100px;left: 20px;"><button onclick="myFunction()" style="background: none;border: none;color: white;"><img id="picture" src="img/4883637.png" width="40px" style="border-radius: 50%;background-color: white;"></button></div>
 	<div class="cursor"></div>
 
 	
-	  <div class="menu2">
-		  <div style="width: 100%;background-color: rgba(0, 0, 0, 0.6);height: 80px;padding-top: 5px;">
-			<a href="index.html" style="position: fixed;height: 100px;top: 0;"><img src="img/Logo Name new.png" width="200px"></a>
-		  </div>  
-	  </div>
+	<div class="menu">
+		<div style="display: flex;">
+		  <a href="index.html" style="position: fixed;height: 100px;top: 5px;"><img src="img/Logo Name new.png" width="200px"></a>
 
-      <div class="form-mid">
+
+		  <div class="nav">
+			  <ul class="nav-links">
+				  <li class="nav-item">
+					  <button class="button" onclick="document.location='index.html'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Home</button>
+				  </li>
+	  
+				  <li class="nav-item">
+					  <button class="button" onclick="document.location='#About'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">About</button>
+				  </li>
+	  
+				  <li class="nav-item">
+					  <button class="button" onclick="document.location='#services'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Services</button>
+				  </li>
+	  
+				  <li class="nav-item">
+					  <button class="button" onclick="document.location='#Team'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Team</button>
+				  </li>
+	  
+				  <li class="nav-item">
+					  <button class="button" onclick="document.location='contact.html'" style="width: 100px; height: 50px;margin-left: 10px;margin-right: 10px;">Contact</button>
+				  </li>
+			  </ul>
+
+			  <div class="burger">
+				  <div class="line1"></div>
+				  <div class="line2"></div>
+				  <div class="line3"></div>
+			  </div>
+		  </div>
+		  
+		  
+		  
+		</div>  
+	</div>
+
+	<div style="background-color: white;width: 100%;padding-bottom: 10px;padding-top: 20px;">
+      <center><div class="form-mid">
         <form action="javascript:sendmail()" method="post">
             <h2 style="text-align: center;padding: 10px;padding-top: 20px;padding-bottom: 20px;color: rgb(176, 101, 74);">Contact Us</h2>
             <div class="field">
@@ -66,6 +101,10 @@
                 <input type="tel" class="form-control" name="Contact" id="Contact" placeholder="Contact No" required="">
             </div>
             <div class="field">
+                <div class="field-text">Meaasge</div>
+                <textarea class="form-control" name="Meaasge" id="Meaasge" placeholder="Write your meaasge" required=""></textarea>
+            </div>
+            <div class="field">
 				<div class="field-text">Upload Resume</div>
                 <input type="file" id="fileupload" name="fileupload" onchange="sendmail()">
             </div>
@@ -75,23 +114,20 @@
                 <button type="submit" class="btn btn-primary">Send Request</button>
             </div></center> -->
         </form>
-    </div>
+    </div></center>
+
+	</div>
 
 
 	 
 
 
 
+<!-- Footer -->
 
 
 
-	<!-- Footer -->
-
-
-
-
-
-	<footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: rgb(241, 241, 241);">
+<footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: rgb(241, 241, 241);">
 
 	<div class="container text-center text-md-left">
 
@@ -100,7 +136,28 @@
 		<div class="col-md-4 mx-auto">
 
 			<h2 class="font-weight-bold text-uppercase mt-3 mb-4">FateInfo</h2>
-			<p>To be a successful global information technology company trusted by its customers for service excellence, caring for its employees and collaborating with our customers to deliver innovative and value driven products and services.</p>
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item">
+				<a class="btn-floating btn-fb mx-1">
+					<i class="fab fa-facebook-f"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-tw mx-1">
+					<i class="fab fa-twitter"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-gplus mx-1">
+					<i class="fab fa-google-plus-g"> </i>
+				</a>
+				</li>
+				<li class="list-inline-item">
+				<a class="btn-floating btn-li mx-1">
+					<i class="fab fa-linkedin-in"> </i>
+				</a>
+				</li>
+			</ul>
 
 		</div>
 
@@ -108,27 +165,27 @@
 
 		<div class="col-md-2 mx-auto">
 
-			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">USEFUL LINKS</h5>
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">NAVIGATION</h5>
 
 			<ul class="list-unstyled">
-			<li>
-				<a href="index.html" style="color: rgb(176, 101, 74);">Home</a>
-			</li>
-			<li>
-				<a href="#!" style="color: rgb(176, 101, 74);"> About us</a>
-			</li>
-			<li>
-				<a href="#!" style="color: rgb(176, 101, 74);">Services</a>
-			</li>
-			<li>
-				<a href="#!" style="color: rgb(176, 101, 74);"> Team</a>
-			</li>
-			<li>
-				<a href="#!" style="color: rgb(176, 101, 74);"> Privacy Policy</a>
-			</li>
-			<li>
-				<a href="#!" style="color: rgb(176, 101, 74);"> Terms of use</a>
-			</li>
+				<li>
+					<a href="index.html" style="color: rgb(176, 101, 74);">Home</a>
+				</li>
+				<li>
+					<a href="#About" style="color: rgb(176, 101, 74);"> About us</a>
+				</li>
+				<li>
+					<a href="#services" style="color: rgb(176, 101, 74);">Services</a>
+				</li>
+				<li>
+					<a href="#Team" style="color: rgb(176, 101, 74);"> Team</a>
+				</li>
+				<li>
+					<a href="privacypolicy.html" style="color: rgb(176, 101, 74);"> Privacy Policy</a>
+				</li>
+				<li>
+					<a href="termsofuse.html" style="color: rgb(176, 101, 74);"> Terms of use</a>
+				</li>
 			</ul>
 
 		</div>
@@ -138,12 +195,11 @@
 		<div class="col-md-3 mx-auto">
 
 
-			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACT US</h5>
-			<p style="width: 100%;">Mahaveer Residency, Avalahally(V),<br>
-				Yelahanka Bangalore,<br>
-				Karnataka - 560045<br>
-				Phone: +91-8095508777<br>
-				Email: contact@thefate.tech</p>
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACT</h5>
+			<p style="width: 100%;">
+				<img src="img/1953874.png" width="15px" style="margin: 10px;">: +91 8095508777<br>
+				<img src="img/498px-Font_F.svg.png" width="15px" style="margin: 10px;">: 1234<br>
+				<img src="img/105px-Font_E.svg.png" width="15px" style="margin: 10px;">: contact@thefate.tech<br></p>
 
 		</div>
 
@@ -151,27 +207,15 @@
 		<hr class="clearfix w-100 d-md-none">
 
 
-		<!-- <div class="col-md-2 mx-auto">
+		<div class="col-md-2 mx-auto">
 
 
-			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+			<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Address</h5>
+			<p style="width: 100%;">Mahaveer Residency, Avalahally(V),<br>
+				Yelahanka Bangalore,<br>
+				Karnataka - 560045<br></p>
 
-			<ul class="list-unstyled">
-			<li>
-				<a href="#!">Link 1</a>
-			</li>
-			<li>
-				<a href="#!">Link 2</a>
-			</li>
-			<li>
-				<a href="#!">Link 3</a>
-			</li>
-			<li>
-				<a href="#!">Link 4</a>
-			</li>
-			</ul>
-
-		</div> -->
+		</div>
 
 
 		</div>
@@ -182,33 +226,7 @@
 
 
 
-	<ul class="list-unstyled list-inline text-center">
-		<li class="list-inline-item">
-		<a class="btn-floating btn-fb mx-1">
-			<i class="fab fa-facebook-f"> </i>
-		</a>
-		</li>
-		<li class="list-inline-item">
-		<a class="btn-floating btn-tw mx-1">
-			<i class="fab fa-twitter"> </i>
-		</a>
-		</li>
-		<li class="list-inline-item">
-		<a class="btn-floating btn-gplus mx-1">
-			<i class="fab fa-google-plus-g"> </i>
-		</a>
-		</li>
-		<li class="list-inline-item">
-		<a class="btn-floating btn-li mx-1">
-			<i class="fab fa-linkedin-in"> </i>
-		</a>
-		</li>
-		<!-- <li class="list-inline-item">
-		<a class="btn-floating btn-dribbble mx-1">
-			<i class="fab fa-dribbble"> </i>
-		</a>
-		</li> -->
-	</ul>
+	<hr>
 
 
 	<div class="footer-copyright text-center py-3">© 2021 Copyright | Jugal Senjaliya
@@ -218,7 +236,6 @@
 
 	</footer>
 	
-
 
 
 
