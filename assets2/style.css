@@ -1474,8 +1474,8 @@ button.active {
   }
 
   .cardcontainer{
-    width: 300px;
-    margin-left: 0px;
+    width: 270px;
+    margin-left: -10px;
   }
 
   .about11{
