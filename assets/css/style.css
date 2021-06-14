@@ -1,25 +1,22 @@
-/* line 10, D:/WEB/Projects/Slider/assets/scss/style.scss */
+
 * {
   box-sizing: border-box;
 }
 
-/* line 14, D:/WEB/Projects/Slider/assets/scss/style.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 19, D:/WEB/Projects/Slider/assets/scss/style.scss */
 ul {
   padding: 0;
 }
 
-/* line 23, D:/WEB/Projects/Slider/assets/scss/style.scss */
 li {
   list-style-type: none;
 }
 
-/* line 27, D:/WEB/Projects/Slider/assets/scss/style.scss */
+
 a,
 a:visited,
 a:hover {
@@ -28,25 +25,22 @@ a:hover {
   outline: none;
 }
 
-/* line 35, D:/WEB/Projects/Slider/assets/scss/style.scss */
+
 html {
   font-size: 16px;
 }
 
-/* line 39, D:/WEB/Projects/Slider/assets/scss/style.scss */
 html,
 body {
-  /* overflow: hidden; */
   height: 100vh;
 }
 
-/* line 45, D:/WEB/Projects/Slider/assets/scss/style.scss */
 body {
   font-family: 'Avenir Next', serif;
   color: #030303;
 }
 
-/* line 50, D:/WEB/Projects/Slider/assets/scss/style.scss */
+
 #slides-main, #slides-main:after, #slides-main .slide-image, #slides-main .abs-mask, #slides-main .slide {
   position: absolute;
   top: 0;
@@ -58,25 +52,19 @@ body {
 .slidepp{
   margin-bottom: 200px;
   color: white;
-  /* -webkit-text-stroke-width: 2.5px;
-  -webkit-text-stroke-color: rgb(176, 101, 74); */
   font-weight: 400;
 }
 
 .slidepp span{
   width: 80%;
   color: white;
-  /* color: white;-webkit-text-stroke-width: 0px;-webkit-text-stroke-color: white; */
-  /* font-weight: 200; */
 }
 
-/* line 58, D:/WEB/Projects/Slider/assets/scss/style.scss */
 .mask {
   overflow: hidden;
 }
 
-/* #LAYOUT - START*/
-/* line 69, D:/WEB/Projects/Slider/assets/scss/style.scss */
+
 #hero-slider {
   /* margin-top: 0px; */
   /* position: relative; */
